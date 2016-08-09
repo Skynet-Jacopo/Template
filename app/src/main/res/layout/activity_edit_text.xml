@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.template.EditText.EditTextActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="title"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:cursorVisible="false"
+        android:id="@+id/edt_issue_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/bg_edittext"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:singleLine="true"
+            android:id="@+id/edt_name"
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_edittext"
+            android:gravity="left|center_vertical"
+            android:hint="账号"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:id="@+id/edt_password"
+            android:layout_width="200px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_edittext"
+            android:gravity="left|center_vertical"
+            android:hint="密码"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btn_issue"
+            style="?android:attr/actionBarDivider"
+            android:layout_width="100px"
+            android:layout_height="80px"
+            android:layout_gravity="center"
+            android:background="#359141"
+            android:gravity="center"
+            android:text="发表"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efeeee"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="热门跟帖"/>
+
+    <ListView
+        android:id="@+id/list_issue"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+    </ListView>
+</LinearLayout>
