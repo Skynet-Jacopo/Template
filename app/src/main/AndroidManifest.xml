@@ -33,6 +33,32 @@
         <activity android:name=".CoordinatorLayout.ScrollingActivity"
         android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".TemplateActivity_2"></activity>
+        <activity android:name=".TemplateActivity_3_"></activity>
+        <activity android:name=".TemplateActivity_4_"></activity>
+        <activity android:name=".TemplateActivity_5_"></activity>
+        <activity android:name=".TemplateActivity_6_"></activity>
+        <activity android:name=".TemplateActivity_7_"></activity>
+        <activity android:name=".TemplateActivity_8_"></activity>
+        <activity android:name=".TemplateActivity_9_"></activity>
+        <activity android:name=".TemplateActivity_10_"></activity>
+        <activity android:name=".TemplateActivity_11_"></activity>
+        <activity android:name=".pay.PayDemoActivity"></activity>
+        <activity
+            android:name=".pay.H5PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
 
         <meta-data
             android:name="design_width"

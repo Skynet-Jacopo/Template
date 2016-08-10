@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:background="#eee"
+                >
+
+                <com.example.administrator.template.fixed.FixedGridView
+                    android:id="@+id/fgv_test_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20px"
+                    android:background="#fff"
+                    android:numColumns="3">
+
+                </com.example.administrator.template.fixed.FixedGridView>
+
+            </LinearLayout>
+
+
+                >
+                <com.example.administrator.template.fixed.FixedGridView
+                    android:id="@+id/fgv_test_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="3"
+                    android:columnWidth="360px"
+                    android:stretchMode="columnWidth"
+                    >
+
+                </com.example.administrator.template.fixed.FixedGridView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#eee"
+                    />
+
+            <com.example.administrator.template.fixed.FixedGridView
+                android:id="@+id/fgv_test_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:columnWidth="360px"
+                android:stretchMode="columnWidth"
+                >
+
+            </com.example.administrator.template.fixed.FixedGridView>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100px"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0px"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="1"-->
+
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="1px"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="#eee" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0px"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center"-->
+                    <!--&gt;-->
+
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="2"-->
+
+                        <!--/>-->
+
+                <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#eee"
+                />
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout_tset_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="#fe2f49"
+                app:tabSelectedTextColor="#fe2f49"
+                app:tabTextColor="#333" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#efeeee" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_test_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+
+    <!--</ScrollView>-->
+
+</LinearLayout>

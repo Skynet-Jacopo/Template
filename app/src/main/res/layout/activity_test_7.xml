@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="400px"
+                android:background="#eee">
+
+                <ImageView
+                    android:id="@+id/img_test_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50px"
+                    android:src="@drawable/education" />
+
+                <TextView
+                    android:id="@+id/tv_test_7_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="150px"
+                    android:layout_toRightOf="@+id/img_test_7"
+                    android:text="点击登录" />
+
+                <TextView
+                    android:id="@+id/tv_test_7_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_test_7_1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10px"
+                    android:layout_marginTop="20px"
+                    android:layout_toRightOf="@+id/img_test_7"
+                    android:text="常用地:" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/arrow_right" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_test_7_3"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="我的订单" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:background="#eee" />
+
+            <RelativeLayout
+                android:id="@+id/rl_test_7"
+                android:layout_width="match_parent"
+                android:layout_height="88px">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="88px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30px"
+                    android:text="我的钱包" />
+
+                <ImageView
+                    android:id="@+id/img_mymoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/arrow_right"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="88px"
+                    android:layout_toLeftOf="@+id/img_mymoney"
+                    android:gravity="center"
+                    android:text="余额/无限币/银行卡/支付宝"
+                    android:textSize="20px"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_test_7_4"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="我的团购券" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#eee"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_test_7_5"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="我的收藏" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_test_7_6"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="最近浏览" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_test_7_7"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="待点评" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_test_7_8"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="服务中心" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_test_7_9"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="联系电话" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_test_7_10"
+                android:layout_width="match_parent"
+                android:layout_height="88px"
+                android:drawableRight="@drawable/arrow_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="我的订单" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:background="#eee" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

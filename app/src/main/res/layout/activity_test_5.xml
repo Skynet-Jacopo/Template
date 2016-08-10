@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:usmaker="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.administrator.template.gridviewgallery.GridViewGallery
+                android:id="@+id/grid_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                app:contentBackgroudColor="@android:color/white"
+                app:gvgContentPadding="10dp"
+                app:indicatorBackgroudColor="@android:color/white"
+                app:indicatorHeight="20dp"
+                app:indicatorSize="8dp"
+                app:itemHeight="85dp"
+                app:itemLayout="@layout/gridview_gallery_item_demo"
+                app:numColumns="4"
+                app:numRows="2"></com.example.administrator.template.gridviewgallery.GridViewGallery>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#eee" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+
+                >
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#eee" />
+
+            <com.example.administrator.template.fixed.FixedGridView
+                android:id="@+id/fgv_test_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:columnWidth="360px"
+                android:numColumns="2"
+                android:stretchMode="columnWidth">
+
+            </com.example.administrator.template.fixed.FixedGridView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="80px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20px"
+                    android:text="猜你喜欢" />
+
+
+                <com.example.administrator.template.fixed.FixedListView
+
+                    android:id="@+id/flv_test_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                </com.example.administrator.template.fixed.FixedListView>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

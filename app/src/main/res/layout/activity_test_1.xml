@@ -10,6 +10,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="常用"
+    android:layout_marginLeft="20px"
+    android:layout_marginTop="20px"
     />
 
 <GridView
@@ -17,6 +19,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:numColumns="3"
+    android:layout_marginTop="30px"
 
 
 
@@ -27,6 +30,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="全部"
+    android:layout_marginLeft="20px"
+    android:layout_marginTop="20px"
     />
 
     <ExpandableListView
@@ -34,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:groupIndicator="@null"
-
+        android:layout_marginTop="20px"
         />
 
 </LinearLayout>

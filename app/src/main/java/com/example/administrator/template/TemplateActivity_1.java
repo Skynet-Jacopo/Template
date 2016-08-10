@@ -2,29 +2,37 @@ package com.example.administrator.template;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.zhy.autolayout.AutoLayoutActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class TemplateActivity_1 extends AppCompatActivity {
+public class TemplateActivity_1 extends AutoLayoutActivity {
 
     ExpandableListView mainlistview = null;
     List<String> parent = null;
     Map<String, List<String>> map = null;
     GridView gv_test_1;
+    //上下文对象
 
+    //图片数组
+    private String[] imgs = {
+            "电视机","电视机啊电视机","电视机啊飒飒大","电视机的防守打法","电视机","电视机方法","电视机发","电视机阿达","电视机撒的","电视机阿斯顿",
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,19 +44,16 @@ public class TemplateActivity_1 extends AppCompatActivity {
 
         //配置适配器
         gv_test_1.setAdapter(new GridViewAdapter(this));
+
         initData();
         mainlistview.setAdapter(new MyAdapter());
+
     }
 
     //自定义适配器
     class GridViewAdapter extends BaseAdapter {
-        //上下文对象
-        private Context context;
-        //图片数组
-        private String[] imgs = {
-                "电视机","电视机啊电视机","电视机啊飒飒大","电视机的防守打法","电视机","电视机方法","电视机发","电视机阿达","电视机撒的","电视机阿斯顿",
-        };
 
+        private Context context;
         GridViewAdapter(Context context) {
             this.context = context;
         }
@@ -66,21 +71,24 @@ public class TemplateActivity_1 extends AppCompatActivity {
         }
 
         //创建View方法
-        public View getView(int position, View convertView, ViewGroup parent) {
+        public View getView(final int position, View convertView, final ViewGroup parent) {
           TextView textView;
             if (convertView == null) {
                 textView=new TextView(context);
-
 
             } else {
                 textView = (TextView) convertView;
             }
             textView.setText(imgs[position]);//为ImageView设置图片资源
+            gv_test_1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Toast.makeText(context,"点击了"+imgs[position],Toast.LENGTH_SHORT).show();
+                }
+            });
             return textView;
         }
-
     }
-
         // 初始化数据
     public void initData() {
         parent = new ArrayList<String>();

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_test_10_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_1" />
+
+                <TextView
+                    android:id="@+id/tv_test_10_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#000"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30px"
+                    android:text="10月21日 | 北京出发"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_test_10_1"
+                android:layout_width="match_parent"
+                android:layout_height="130px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="20px"
+                    android:text="北京故宫·天坛圆明园一日游"
+                    android:textColor="#333"
+                    android:textSize="30px" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginTop="20px"
+                    android:text="含天坛通票，全网最低价"
+                    android:textColor="#999" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:background="#efeeee" />
+
+            <LinearLayout
+                android:id="@+id/ll_test_10_2"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="20px"
+                        android:text="促销价："
+                        android:textColor="#f9f900"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:text="￥ 212起"
+                        android:textColor="#f9f900"
+                        android:textSize="30px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="已享受："
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="双倍抵用券 ￥6"
+                        android:textSize="30px" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:text="点评率："
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="抵用券 ￥200 现金￥5+5"
+                        android:textSize="30px"
+
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/ve_test_10"
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                android:background="#efeeee" />
+
+            <RelativeLayout
+                android:id="@+id/rl_test_10_2"
+                android:layout_width="match_parent"
+                android:layout_height="200px">
+
+                <ImageView
+                    android:id="@+id/img_test_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="50px"
+                    android:src="@drawable/star" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5px"
+                    android:layout_marginTop="50px"
+                    android:layout_toRightOf="@+id/img_test_10"
+                    android:text="顾客满意度"
+                    android:textColor="#333"
+                    android:textSize="35px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_test_10"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="40px"
+                    android:text="累计有919人出游，共179条评论" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20px"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20px"
+                android:background="#efeeee" />
+
+
+            <com.example.administrator.template.fixed.FixedListView
+                android:id="@+id/flv_test_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </com.example.administrator.template.fixed.FixedListView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150px" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_test_10"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true"
+        android:background="#f0f0f0">
+
+        <ImageView
+            android:id="@+id/img_test_10_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5px"
+            android:layout_toLeftOf="@+id/tv_test_10"
+            android:src="@drawable/star"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_test_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="立即预定"
+            android:textColor="#02f78e"
+            android:textSize="45px"
+
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>
